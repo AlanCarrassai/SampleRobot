@@ -53,10 +53,10 @@ void ColisionAvoidanceNeuralNetworkThread::tratamentoRna()
             {
                 int angulo = movement.AnguloRotacaoProcessado;
 
-                if(movement.DirecaoRotacaoProcessada == 2) // esquerda
-                    angulo = -angulo;  // ou +angulo dependendo do seu robô
-                else if(movement.DirecaoRotacaoProcessada == 1) // direita
+                if(movement.DirecaoRotacaoProcessada == 1) // esquerda
                     angulo = +angulo;
+                else if(movement.DirecaoRotacaoProcessada == 2) // direita
+                    angulo = -angulo;
 
                 robo->Rotaciona(angulo, movement.DirecaoMovimentoProcessada, VELOCIDADEROTACAO);
             }
