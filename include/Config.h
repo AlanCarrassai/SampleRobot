@@ -1,0 +1,15 @@
+#ifndef CONFIG_H
+#define CONFIG_H
+
+#define LIMIARFRENTE 1000
+#define LIMIARDIAGONAIS 750
+#define LIMIARLATERAIS 500
+#define LIMITELEITURA 5000
+#define VELOCIDADEROTACAO 50        //50  
+#define VELOCIDADEDESLOCAMENTO 250  //400
+
+// Logs
+#define LOG false
+#define INFO_WALL_FOLLOWER false
+
+#endif // CONFIG_H
