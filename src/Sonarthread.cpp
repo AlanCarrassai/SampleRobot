@@ -16,7 +16,7 @@ void *SonarThread::runThread(void *)
     printSonarReadings();
 
     myMutex.unlock();
-    ArUtil::sleep(1000);
+    ArUtil::sleep(50);
   }
 
   ArLog::log(ArLog::Normal, "Example thread: requested stop running, ending thread.");
